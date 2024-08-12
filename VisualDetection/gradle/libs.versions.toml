@@ -1,0 +1,61 @@
+[versions]
+agp = "8.5.1"
+hiltCompiler = "2.51.1"
+kotlin = "1.9.0"
+kotlinKapt = "1.9.21"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.4"
+activityCompose = "1.9.1"
+composeBom = "2024.04.01"
+textRecognition = "16.0.0"
+cameraX = "1.4.0-alpha04"
+navigation = "2.8.0-alpha07"
+daggerHilt = "2.51.1"
+viewModelCompose = "2.8.4"
+coil = "2.6.0"
+mlFaceDetection = "16.1.6"
+mlDocumentScanner = "16.0.0-beta1"
+mlObjectDetection = "17.0.2"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltCompiler" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+text-recognition = { group = "com.google.mlkit", name = "text-recognition", version.ref = "textRecognition"}
+camerax-core = { group = "androidx.camera", name = "camera-core", version.ref = "cameraX"}
+camerax-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "cameraX"}
+camerax-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "cameraX"}
+camerax-video = { group = "androidx.camera", name = "camera-video", version.ref = "cameraX"}
+camerax-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraX"}
+camerax-extensions = { group = "androidx.camera", name = "camera-extensions", version.ref = "cameraX"}
+navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation"}
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHilt"}
+viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "viewModelCompose"}
+viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "viewModelCompose"}
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil"}
+coil-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coil"}
+ml-face-detection = {group = "com.google.mlkit", name = "face-detection", version.ref = "mlFaceDetection"}
+ml-document-scanner = {group = "com.google.android.gms", name = "play-services-mlkit-document-scanner", version.ref = "mlDocumentScanner"}
+ml-obj-detection = {group = "com.google.mlkit", name = "object-detection", version.ref = "mlObjectDetection"}
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref="kotlinKapt" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt" }

@@ -1,0 +1,9 @@
+package com.example.visualdetection.Core.data
+
+enum class MyAppPermissions {
+    INTERNET, ALARM, CAMERA, LOCATION, NOTIFICATIONS, RECORD_AUDIO, ACTIVITY_RECOGNITION, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE, FOREGROUND_SERVICE,
+}
+
+enum class MyFileTypes {
+    IMAGE, VIDEO, AUDIO, TXT, JSON
+}
